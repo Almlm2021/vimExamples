@@ -60,7 +60,7 @@ void main() {
   // Pass the color to the fragment shader.
   v_color = a_color;
 
-}4
+}
 `;
 
 var fragmentShaderSource = `#version 300 es
@@ -94,6 +94,7 @@ function createShader(gl, type, source) {
   gl.deleteShader(shader);
   return undefined;
 }
+
 
 function createProgram(gl, vertexShader, fragmentShader) {
   var program = gl.createProgram();
